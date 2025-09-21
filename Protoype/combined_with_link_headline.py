@@ -6,7 +6,7 @@ from urllib.parse import quote_plus
 from datetime import datetime, timedelta
 import google.generativeai as genai
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 if not GEMINI_API_KEY:
     raise ValueError("Please set GEMINI_API_KEY as an environment variable or Streamlit secret.")
 genai.configure(api_key=GEMINI_API_KEY)
