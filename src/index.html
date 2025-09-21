@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustNews - Transparent Journalism with Trust Scores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>TrustNews</h1>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">Technology</a>
+                    <a href="#" class="nav-link">Business</a>
+                    <a href="#" class="nav-link">Politics</a>
+                    <a href="#" class="nav-link">Health</a>
+                    <a href="#" class="nav-link">Sports</a>
+                </nav>
+
+                <!-- Search and Tools -->
+                <div class="header-actions">
+                    <div class="search-container">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" placeholder="Search news..." class="search-input">
+                    </div>
+                    <button class="verify-btn" onclick="openVerifyModal()">
+                        Verify News
+                    </button>
+                    <button class="user-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </button>
+                    <button class="menu-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Featured Section -->
+            <section class="featured-section">
+                <h2>Featured</h2>
+                <div class="featured-grid">
+                    <article class="featured-card main-featured">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=400&fit=crop" alt="Featured news" class="featured-image">
+                        <div class="featured-content">
+                            <div class="trust-score high">
+                                <span class="trust-number">92</span>
+                                <span class="trust-label">Trust Score</span>
+                            </div>
+                            <div class="featured-text">
+                                <h3>Major Climate Agreement Reached at International Summit</h3>
+                                <p>World leaders announce unprecedented cooperation on renewable energy initiatives with binding commitments through 2030.</p>
+                                <div class="article-meta">
+                                    <span class="source">Reuters</span>
+                                    <span class="time">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="featured-sidebar">
+                        <article class="featured-card">
+                            <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=400&h=200&fit=crop" alt="Technology news" class="featured-image">
+                            <div class="featured-content">
+                                <div class="trust-score medium">
+                                    <span class="trust-number">76</span>
+                                    <span class="trust-label">Trust Score</span>
+                                </div>
+                                <h4>AI Breakthrough in Medical Diagnostics</h4>
+                                <div class="article-meta">
+                                    <span class="source">TechNews</span>
+                                    <span class="time">4 hours ago</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="featured-card">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop" alt="Business news" class="featured-image">
+                            <div class="featured-content">
+                                <div class="trust-score high">
+                                    <span class="trust-number">88</span>
+                                    <span class="trust-label">Trust Score</span>
+                                </div>
+                                <h4>Global Markets Show Strong Recovery</h4>
+                                <div class="article-meta">
+                                    <span class="source">Financial Times</span>
+                                    <span class="time">6 hours ago</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest News Section -->
+            <section class="news-section">
+                <h2>Latest News</h2>
+                <div class="news-grid" id="newsGrid">
+                    <!-- News cards will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>TrustNews</h3>
+                    <span>•</span>
+                    <span>Transparent journalism with trust scores</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 TrustNews. All rights reserved. Trust scores are based on source reliability, fact-checking, and editorial standards.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Verification Modal -->
+    <div id="verifyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg class="modal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                    </svg>
+                    <span>Verify News Content</span>
+                </div>
+                <button class="modal-close" onclick="closeVerifyModal()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-description">
+                Paste any news content below to check its credibility and get a trust assessment from our verification system.
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="newsText">News Content</label>
+                    <textarea 
+                        id="newsText" 
+                        placeholder="Paste the news article or content you want to verify..." 
+                        rows="6"
+                    ></textarea>
+                    <div class="char-count">
+                        <span id="charCount">0</span> characters
+                    </div>
+                </div>
+
+                <!-- Status Messages -->
+                <div id="successMessage" class="status-message success hidden">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                    </svg>
+                    <span>Content verified successfully!</span>
+                </div>
+
+                <div id="errorMessage" class="status-message error hidden">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                    <span id="errorText">Failed to verify content</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeVerifyModal()">Cancel</button>
+                <button class="btn-primary" onclick="verifyContent()" id="verifyBtn">
+                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                    </svg>
+                    Verify Content
+                </button>
+            </div>
+            <div class="modal-note">
+                <strong>Note:</strong> This verification system analyzes content for credibility indicators including source reliability, fact-checking, and editorial standards.
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="spinner hidden">
+        <div class="spinner-circle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
