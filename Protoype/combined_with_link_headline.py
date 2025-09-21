@@ -84,7 +84,7 @@ def fact_check_news(headline, description=""):
     evidence_titles = [news['title'] for news in evidence_news]
 
     if not evidence_titles:
-        return [{"prediction": "UNKNOWN", "confidence": 0, "reason": "No related recent news found"}]
+        return [{"prediction": "NO EVIDENCE FOUND", "confidence": 0, "reason": "No related recent news found"}]
 
     # Step 2: Exact match check
     for title in evidence_titles:
