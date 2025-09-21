@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   # News Platform Design
 
@@ -9,3 +10,6 @@
 
   Run `npm run dev` to start the development server.
   
+=======
+# Hacakathon_Prototype
+>>>>>>> 292307af14fae8893dde0b076489b8d93f44094c
