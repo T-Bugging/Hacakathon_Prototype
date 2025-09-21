@@ -27,7 +27,7 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 
 # 🔑 Load API Key
-GEMINI_API_KEY = "AIzaSyA0-1QSjRCnLcROFmf3aQ1rWOb3f2DKAhg"
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
 genai.configure(api_key=GEMINI_API_KEY)
 
 MAX_DAYS_LOOKBACK = 30  # Look back window for RSS check
