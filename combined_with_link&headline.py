@@ -26,7 +26,7 @@ from datetime import datetime, timedelta
 import google.generativeai as genai
 
 # 🔑 Gemini API Key
-GEMINI_API_KEY = "AIzaSyA0-1QSjRCnLcROFmf3aQ1rWOb3f2DKAhg"
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
 genai.configure(api_key=GEMINI_API_KEY)
 
 MAX_DAYS_LOOKBACK = 30  # Search window for related news
