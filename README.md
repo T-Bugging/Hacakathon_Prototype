@@ -1,6 +1,6 @@
 # **AI-Powered News  Platform**
 
-NewsVerify is a cutting-edge web application designed to help users assess the credibility of news articles. By leveraging Google's Gemini AI, the platform analyzes headlines and article links to provide a reliability score, assisting users in distinguishing between authentic and potentially misleading content.
+Our platfrom is a cutting-edge web application designed to help users assess the credibility of news articles. By leveraging Google's Gemini AI, the platform analyzes headlines and article links to provide a reliability score, assisting users in distinguishing between authentic and potentially misleading content.
 
 ---
 
