@@ -1,15 +1,38 @@
-<<<<<<< HEAD
+# **AI-Powered News  Platform**
 
-  # News Platform Design
+NewsVerify is a cutting-edge web application designed to help users assess the credibility of news articles. By leveraging Google's Gemini AI, the platform analyzes headlines and article links to provide a reliability score, assisting users in distinguishing between authentic and potentially misleading content.
 
-  This is a code bundle for News Platform Design. The original project is available at https://www.figma.com/design/bRVMiwFcwdzicdYspjqolG/News-Platform-Design.
+---
 
-  ## Running the code
+## Features
 
-  Run `npm i` to install the dependencies.
+- Headline & Article Link Verification: Input a news headline or article URL to receive an instant credibility assessment.
+- Reliability Score: Obtain a score indicating the trustworthiness of the news content.
+- Gemini AI Integration: Utilizes Google's Gemini AI to analyze and evaluate news articles.
+- User-Friendly Interface: Designed for ease of use, ensuring a seamless experience for all users.
 
-  Run `npm run dev` to start the development server.
-  
-=======
-# Hacakathon_Prototype
->>>>>>> 292307af14fae8893dde0b076489b8d93f44094c
+---
+
+## Technologies Used
+
+- Backend: Python (model and verification logic)
+- Frontend: Designed in Figma, translated to TypeScript
+- AI Integration: Google Gemini API
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python installed on your machine.
+
+## Prototype Access
+
+A live prototype of is available for testing and demonstration purposes. Visit the following link to try out the platform:
+LINK - https://prototypelink.streamlit.app/
+
+
+
+
+
