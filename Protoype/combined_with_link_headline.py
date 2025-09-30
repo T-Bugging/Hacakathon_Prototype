@@ -113,7 +113,7 @@ def fact_check_news(headline, description=""):
     }}
     """
 
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(model_input)
 
     return parse_gemini_response_as_list(response.text)
